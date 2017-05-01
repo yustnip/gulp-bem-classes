@@ -13,7 +13,7 @@ module.exports = ( options ) => {
     }
 
     if ( file.isStream() ) {
-      cb( new gutil.PluginError('gulp-example-plugin', 'Streaming not supported') );
+      cb( new gutil.PluginError('gulp-bem-classes', 'Streaming not supported') );
       return;
     }
 
@@ -29,7 +29,7 @@ module.exports = ( options ) => {
       file.contents = new Buffer( result );
       this.push( file );
     } catch ( err ) {
-      this.emit( 'error', new gutil.PluginError('gulp-example-plugin', err ) );
+      this.emit( 'error', new gutil.PluginError('gulp-bem-classes', err ) );
     }
 
     cb();
