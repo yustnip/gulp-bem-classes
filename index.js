@@ -19,7 +19,7 @@ module.exports = ( options ) => {
 
     try {
       const data = file.contents.toString();
-      const exp = /bemClass\=(\"|\')(.*)(\"|\')/ig;
+      const exp = /bemClass\=(\"|\')(.*)(\"|\')(?=\s)/ig;
 
       const result = data.replace( exp, function( str, p1, p2 ) {
         const handledBemClass = eval( p2 );
