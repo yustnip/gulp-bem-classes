@@ -1,5 +1,8 @@
 # gulp-bem-classes
 
+[![npm](https://img.shields.io/npm/dt/gulp-bem-classes.svg)](https://www.npmjs.com/package/gulp-bem-classes)
+[![npm](https://img.shields.io/npm/v/gulp-bem-classes.svg)](https://www.npmjs.com/package/gulp-bem-classes)
+
 It finds and replaces strings like `bemClass="b( 'block', 'element' )"` to regular HTML classes. Used [b_](https://github.com/azproduction/b_) formatter inside.
 
 ## Usage
