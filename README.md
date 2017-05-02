@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/dt/gulp-bem-classes.svg)](https://www.npmjs.com/package/gulp-bem-classes)
 [![npm](https://img.shields.io/npm/v/gulp-bem-classes.svg)](https://www.npmjs.com/package/gulp-bem-classes)
 
-It finds and replaces strings like `bemClass="b( 'block' )( 'element' )"` to regular HTML classes. Used [bem-cn](https://github.com/albburtsev/bem-cn) formatter inside.
+It finds and replaces strings like `bemClass="b('block')('element')"` to regular HTML classes. Used [bem-cn](https://github.com/albburtsev/bem-cn) formatter inside.
 
 ## Usage
 
@@ -30,9 +30,9 @@ It finds and replaces strings like `bemClass="b( 'block' )( 'element' )"` to reg
 3. Use b_ inside your templates:
 
     ```html
-    <div bemClass="b( 'block' )">
-        <div bemClass="b( 'block' )( 'element' )">Element</div>
-        <div bemClass="b( 'block' )( 'element', { size: 'small' } )">Small element</div>
+    <div bemClass="b('block')">
+        <div bemClass="b('block')('element')">Element</div>
+        <div bemClass="b('block')('element', {size: 'small'})">Small element</div>
     </div>
     ```
 
