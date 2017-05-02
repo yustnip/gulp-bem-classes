@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/dt/gulp-bem-classes.svg)](https://www.npmjs.com/package/gulp-bem-classes)
 [![npm](https://img.shields.io/npm/v/gulp-bem-classes.svg)](https://www.npmjs.com/package/gulp-bem-classes)
 
-It finds and replaces strings like `bemClass="b('block')('element')"` to regular HTML classes. Used [bem-cn](https://github.com/albburtsev/bem-cn) formatter inside.
+It finds and replaces strings like `bemClass="b('block')('element')"` to regular HTML classes. Used the [bem-cn](https://github.com/albburtsev/bem-cn) formatter inside.
 
 ## Usage
 
