@@ -1,6 +1,6 @@
 {
   "name": "gulp-bem-classes",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "BEM class name formatter for HTML",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/yustnip/gulp-bem-classes#readme",
   "dependencies": {
-    "b_": "^1.3.3",
     "bem-cn": "^2.1.3",
     "gulp-util": "^3.0.8",
     "through2": "^2.0.3"
