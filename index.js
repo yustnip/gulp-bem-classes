@@ -2,7 +2,7 @@
 
 const gutil = require( 'gulp-util' );
 const through = require( 'through2' );
-const b = require( 'b_' );
+const b = require( 'bem-cn' );
 
 module.exports = ( options ) => {
 
@@ -25,7 +25,7 @@ module.exports = ( options ) => {
         const handledBemClass = eval( p1 );
         return 'class=\"' + handledBemClass + '\"';
       } );
-      
+
       file.contents = new Buffer( result );
       this.push( file );
     } catch ( err ) {
