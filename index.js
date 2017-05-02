@@ -19,13 +19,13 @@ module.exports = ( options ) => {
 
     try {
       const data = file.contents.toString();
-      const exp = /bemClass\=(\"|\')(.*)(\"|\')(?=\s)/ig;
+      const exp = /bemClass\=\"(.*?)\"/ig;
 
-      const result = data.replace( exp, function( str, p1, p2 ) {
-        const handledBemClass = eval( p2 );
+      const result = data.replace( exp, function( str, p1 ) {
+        const handledBemClass = eval( p1 );
         return 'class=\"' + handledBemClass + '\"';
       } );
-
+      
       file.contents = new Buffer( result );
       this.push( file );
     } catch ( err ) {
