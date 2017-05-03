@@ -60,7 +60,7 @@ Example with the [gulp-file-include](https://github.com/coderhaoxin/gulp-file-in
   gulp.task( 'blocks', function() {
     return gulp.src( './templates/blocks/*.html' )
       .pipe( bemClasses( { blockPerFile: true } ) )
-      .pipe( gulp.dest('./templates/blocks/generated') )
+      .pipe( gulp.dest( './templates/blocks/generated' ) )
   } )
 
   gulp.task( 'templates', function() {
@@ -71,7 +71,7 @@ Example with the [gulp-file-include](https://github.com/coderhaoxin/gulp-file-in
         indent: true
       } ) )
       .pipe( bemClasses() )
-      .pipe( gulp.dest('./') )
+      .pipe( gulp.dest( './dist' ) )
   } )
   ```
 
