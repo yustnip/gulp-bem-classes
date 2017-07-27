@@ -9,10 +9,6 @@ It finds and replaces strings like `bClass="b('block')('element')"` to regular H
 
 ### Install
 
-`yarn add gulp-bem-classes --dev`
-
-or
-
 `npm i gulp-bem-classes -D`
 
 ### All in one mode
